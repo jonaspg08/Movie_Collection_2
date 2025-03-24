@@ -1,21 +1,21 @@
 <script setup>
 // import { defineComponent } from 'vue'
 import { storeToRefs } from 'pinia';
-import { useCounterStore } from '@/stores/counter';
+import { useCounterStore } from '../stores/counter';
 
 const movieStore = storeToRefs(useCounterStore())
 const { allMovies, oneMovie } = movieStore
 const movieFunctions = useCounterStore()
 
-
+// const allMoviesRef = ref(false)
 </script>
 
 <template>
     <div>
         <h3>Enter the movie's title, its production date, where it was filmed and genre.</h3>
-        <form @submit.prevent="movieFunctions.addMovieToList(oneMovie)">
+        <form @submit.prevent="movieFunctions.addMovieToList">
             <input type="text" v-model="oneMovie.title">
-            <input type="text" v-model="oneMovie.productionDate">
+            <input type="date" v-model="oneMovie.productionDate">
             <input type="text" v-model="oneMovie.where">
             <input type="text" v-model="oneMovie.genre">
             <button type="submit">Add to your list</button>
