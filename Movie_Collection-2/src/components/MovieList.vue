@@ -33,13 +33,18 @@ const movieFunctions = useCounterStore()
 
 <style scoped>
 button {
-  flex: auto;
-  border-radius: 10px;
-  border: 20px;
-  padding: 10px;
-  font-weight: bold;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  align-items: center;
+    flex: auto;
+    border-radius: 10px;
+    border: 20px;
+    padding: 10px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    align-items: center;
+}
+
+form {
+    justify-content: center;
+
 }
 
 button:hover {
@@ -48,6 +53,10 @@ button:hover {
 
 ul {
     list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
 }
 
 li {
@@ -58,6 +67,7 @@ li {
     border-radius: 10px;
     background-color: lightgrey;
     box-shadow: 0 0 0 1px black inset;
+
 }
 
 h3 {
@@ -75,6 +85,5 @@ input {
     border-radius: 10px;
     border: 1px solid black;
     box-shadow: 0 0 0 1px black inset;
-
 }
 </style>
