@@ -39,7 +39,7 @@ button {
   border: none;
   padding: 10px;
   font-weight: bold;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 button:hover {

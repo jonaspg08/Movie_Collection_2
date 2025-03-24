@@ -22,7 +22,7 @@ const movieFunctions = useCounterStore()
         </form>
         <ul>
             <li v-for="movies in allMovies" :key="movies.id">
-                <p>{{ movies.title }}</p>
+                <h4>{{ movies.title }}</h4>
                 <p>{{ movies.productionDate }}</p>
                 <p>{{ movies.where }}</p>
                 <p>{{ movies.genre }}</p>
@@ -38,7 +38,7 @@ button {
     border: 20px;
     padding: 10px;
     font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     align-items: center;
 }
 
