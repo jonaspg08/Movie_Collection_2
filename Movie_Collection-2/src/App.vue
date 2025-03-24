@@ -6,12 +6,9 @@ import { useCounterStore } from './stores/counter';
 import MovieList from './components/MovieList.vue';
 
 const movieStore = useCounterStore()
-const { allMovies, oneMovie: oneMovieFromStore } = storeToRefs(useCounterStore());
+const { allMovies, oneMovie } = storeToRefs(useCounterStore());
 const movieFunctions = movieStore
 
-
-const allMoviesRef = ref(false)
-const oneMovie = ref(false)
 
 </script>
 
@@ -20,9 +17,9 @@ const oneMovie = ref(false)
   <br>
   <MovieList v-if="oneMovie" />
   <button @click="oneMovie = {}" v-if="!oneMovie">Add movie to your list</button>
-  <div v-for="movie in allMoviesRef" :key="movie.id">
+  <div v-for="movie in allMovies" :key="movie.id">
     <div @click="oneMovie = movie">
-      {{ movie }}
+      <MovieItem :movie="movie" />
     </div>
   </div>
 </template>
