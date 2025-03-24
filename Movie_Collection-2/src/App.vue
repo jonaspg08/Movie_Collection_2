@@ -18,9 +18,10 @@ const oneMovie = ref(false)
   <h1 :class="title">Create your own Movie Collection</h1>
   <p></p>
   <MovieList v-if="oneMovie" />
-  <button @click="oneMovie">Add movie to your list</button>
+  <button @click="oneMovie = {}" v-if="!oneMovie">Add movie to your list</button>
   <div v-for="movie in allMoviesRef">
     <div @click="oneMovie = movie">
+      {{ movie }}
     </div>
 
   </div>
