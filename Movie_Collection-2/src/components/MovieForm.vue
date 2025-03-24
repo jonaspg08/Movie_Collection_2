@@ -12,7 +12,7 @@ const movieFunctions = useCounterStore()
 
 <template>
     <div >
-        <form @submit.prevent="movieFunctions.addMovieToList">
+        <form>
             <h3>Enter the movie's title, its production date, where it was filmed and genre.</h3>
             <section class="flex">
                 <input type="text" v-model="oneMovie.title">
@@ -31,7 +31,11 @@ const movieFunctions = useCounterStore()
                     <option value="Western">Western</option>
                 </select>
             </section>
-            <button type="submit">Add to your list</button>
+            <button @click.prevent="movieFunctions.addMovieToList"type="submit">Add to your list</button>
+            <br>
+            <button @click="oneMovie = false">Cancel</button>
+            <br>
+            <button @click="movieFunctions.deleteMovieFromList(oneMovie)">Delete</button>
         </form>
     </div>
 </template>
@@ -53,11 +57,11 @@ form {
 h3 {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(196, 175, 154);
+    color: rgb(33, 161, 121);
 }
 
 p {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif; 
 }
 
 input {
@@ -69,7 +73,7 @@ input {
 }
 
 div {
-    position: absolute;
+    position: fixed;
     background-color: rgba(211, 211, 211, 0);
     backdrop-filter: blur(10px);
     height: 100vh;

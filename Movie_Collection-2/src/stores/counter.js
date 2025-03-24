@@ -13,9 +13,14 @@ export const useCounterStore = defineStore('counter', () => {
     localStorage.setItem('allMovies', JSON.stringify(allMovies.value));
   }
 
+  function deleteMovieFromList(movie){
+    allMovies.value = allMovies.value.filter(m => m !== movie)
+    localStorage.setItem('allMovies', JSON.stringify(allMovies.value));
+  }
   return {
     oneMovie,
     allMovies,
-    addMovieToList
+    addMovieToList,
+    deleteMovieFromList
   }
 })
