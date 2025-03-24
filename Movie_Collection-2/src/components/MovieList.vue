@@ -31,4 +31,50 @@ const movieFunctions = useCounterStore()
     </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+button {
+  flex: auto;
+  border-radius: 10px;
+  border: 20px;
+  padding: 10px;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  align-items: center;
+}
+
+button:hover {
+    box-shadow: 0 0 0 5px black inset;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: lightgrey;
+    box-shadow: 0 0 0 1px black inset;
+}
+
+h3 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 0 0 0 1px black inset;
+
+}
+</style>
