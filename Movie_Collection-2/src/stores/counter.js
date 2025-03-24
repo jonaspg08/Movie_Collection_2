@@ -13,7 +13,6 @@ export const useCounterStore = defineStore('counter', () => {
     localStorage.setItem('allMovies', JSON.stringify(allMovies.value));
   }
 
-  addMovieToList();
   return {
     oneMovie,
     allMovies,
