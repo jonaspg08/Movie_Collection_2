@@ -14,6 +14,12 @@ html, body {
 }
 input, select{
   background-color: rgb(196, 175, 154);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 0 0 0 1px black inset;
+    width: 140px;
 }
 
 button {

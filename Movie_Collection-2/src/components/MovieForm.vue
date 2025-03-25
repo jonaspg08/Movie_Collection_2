@@ -2,6 +2,7 @@
 // import { defineComponent } from 'vue'
 import { storeToRefs } from 'pinia';
 import { useCounterStore } from '../stores/counter';
+import { onMounted } from 'vue';
 
 const movieStore = storeToRefs(useCounterStore())
 const { oneMovie } = movieStore
@@ -15,10 +16,23 @@ const movieFunctions = useCounterStore()
         <form>
             <h3>Enter the movie's title, its production date, where it was filmed and genre.</h3>
             <section class="flex">
-                <input type="text" v-model="oneMovie.title">
+                <input type="text" v-model="oneMovie.title" placeholder="Title">
                 <input type="date" v-model="oneMovie.productionDate">
-                <input type="text" v-model="oneMovie.where" placeholder="Herkunftsland">
-                <select v-model="oneMovie.genre">
+                <select v-model="oneMoviewhere" placeholder="Origin">
+                    <option value=""></option>
+                    <option value="USA">USA</option>
+                    <option value="Germany">Germany</option>
+                    <option value="France">France</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Spain">Spain</option>
+                    <option value="UK">UK</option>
+                    <option value="Japan">Japan</option>
+                    <option value="China">China</option>
+                    <option value="India">India</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="Canada">Canada</option>
+                </select>
+                <select v-model="oneMovie.genre" placeholder="Genre">
                     <option value=""></option>
                     <option value="Action">Action</option>
                     <option value="Comedy">Comedy</option>
@@ -83,13 +97,5 @@ div {
 .flex {
     display: flex;
     justify-content: center;
-}
-
-select {
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
-    border: 1px solid black;
-    box-shadow: 0 0 0 1px black inset;
 }
 </style>
