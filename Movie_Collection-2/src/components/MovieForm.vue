@@ -46,26 +46,32 @@ const movieFunctions = useCounterStore()
                 </select>
             </section>
             <div class="buttonRow">
-                <button class="addToList" @click.prevent="movieFunctions.addMovieToList" type="submit"> <svg class="icon add-icon"
-                        view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M12 5v14M5 12h14"></path>
-                    </svg>
-                </button>
+                <!-- <div class="add"> -->
+                    <button @click.prevent="movieFunctions.addMovieToList" type="submit"> <svg class="icon add-icon"
+                            view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 5v14M5 12h14"></path>
+                        </svg>
+                    </button>
+                <!-- </div> -->
                 <br>
-                <button class="cancel" oneMovie = false>
-                    <svg class="icon add-cancel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M18 6L6 18M6 6l12 12"></path>
-                    </svg>
-                </button>
+                <!-- <div class="cancel"> -->
+                    <button class="cancel" oneMovie=false>
+                        <svg class="icon add-cancel" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 6L6 18M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                <!-- </div> -->
                 <br>
-                <button class="deleteMovie" @click="movieFunctions.deleteMovieFromList(oneMovie)">
-                    <svg class="icon add-cancel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M3 6h18M9 6v12m6-12v12M4 6l1-3h14l1 3M5 6h14v14H5z"></path>
-                    </svg>
-                </button>
+                <!-- <div class="delete"> -->
+                    <button class="deleteMovie" @click="movieFunctions.deleteMovieFromList(oneMovie)">
+                        <svg class="icon add-cancel" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 6h18M9 6v12m6-12v12M4 6l1-3h14l1 3M5 6h14v14H5z"></path>
+                        </svg>
+                    </button>
+                <!-- </div> -->
             </div>
         </form>
     </div>
@@ -129,14 +135,5 @@ div {
     width: 20px;
     height: 20px;
     fill: white;
-}
-
-.addToList {
-    background-color: rgb(33, 161, 121);
-    border: none;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
-    box-shadow: 0 0 0 1px black inset;
 }
 </style>
