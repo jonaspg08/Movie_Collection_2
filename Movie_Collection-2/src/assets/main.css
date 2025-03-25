@@ -37,10 +37,10 @@ button {
   background-color: rgb(30, 30, 36);
   color: rgb(251, 159, 137);
   transition: all 1s;
+  cursor: pointer;
 }
 
 button:hover {
-  /* box-shadow: 0 0 0 5px rgb(251, 159, 137); */
   background-color: rgb(251, 159, 137);
   color: rgb(30, 30, 36);
 }
