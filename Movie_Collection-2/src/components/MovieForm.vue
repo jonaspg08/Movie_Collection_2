@@ -85,8 +85,8 @@ form {
     justify-content: center;
     background-color: black;
     color: white;
-    width: 70%;
-    height: 30%;
+    width: 800px;
+    height: 300px;
     border-radius: 20px;
     margin: 15% auto;
     display: flex;
