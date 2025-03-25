@@ -12,7 +12,7 @@ const movieFunctions = useCounterStore()
 </script>
 
 <template>
-    <div >
+    <div>
         <form>
             <h3>Enter the movie's title, its production date, where it was filmed and genre.</h3>
             <section class="flex">
@@ -45,7 +45,7 @@ const movieFunctions = useCounterStore()
                     <option value="Western">Western</option>
                 </select>
             </section>
-            <button @click.prevent="movieFunctions.addMovieToList"type="submit">Add to your list</button>
+            <button @click.prevent="movieFunctions.addMovieToList" type="submit">Add to your list</button>
             <br>
             <button @click="oneMovie = false">Cancel</button>
             <br>
@@ -75,7 +75,7 @@ h3 {
 }
 
 p {
-    font-family: Arial, Helvetica, sans-serif; 
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 input {

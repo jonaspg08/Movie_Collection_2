@@ -1,5 +1,5 @@
 <script setup>
-const oneMovie=defineProps(['movie'])
+const oneMovie = defineProps(['movie'])
 </script>
 
 <template>
@@ -12,7 +12,7 @@ const oneMovie=defineProps(['movie'])
 </template>
 
 <style scoped>
-    section {
+section {
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -23,7 +23,8 @@ const oneMovie=defineProps(['movie'])
     margin: 10px;
 }
 
-h4, p {
+h4,
+p {
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px;
     margin: 10px;
