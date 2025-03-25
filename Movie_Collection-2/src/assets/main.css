@@ -46,31 +46,31 @@ button:hover {
 }
 
 .deleteMovie {
-  box-shadow: 0 0 10px rgb(251, 159, 137);
-  color: rgb(251, 159, 137);
+  box-shadow: 0 0 10px rgb(255, 74, 74);
+  color: rgb(255, 74, 74);
 }
 
 .deleteMovie:hover {
-  background-color: #ff6600;
+  background-color: rgb(255, 74, 74);
   color: rgb(30, 30, 36);
 }
 
 .cancel {
-  box-shadow: 0 0 10px rgb(255, 51, 0);
-  color: rgb(255, 51, 0);
+  box-shadow: 0 0 10px #3dd1fe;
+  color: #3dd1fe;
 }
 
 .cancel:hover {
-  background-color: #ff6600;
+  background-color: #3dd1fe;
   color: rgb(30, 30, 36);
 }
 
 .submit {
-  box-shadow: 0 0 10px rgb(43, 255, 0);
-  color: rgb(43, 255, 0);
+  box-shadow: 0 0 10px rgb(154, 255, 134);
+  color: rgb(153, 255, 134);
 }
 
 .submit:hover {
-  background-color: #00cc00;
+  background-color: rgb( 153, 255, 134);
   color: rgb(30, 30, 36);
 }
