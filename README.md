@@ -7,6 +7,6 @@ Click on a film to edit or delete it by hitting the trashcan symbol.
 Don’t worry; your film list automatically saves after submitting a new film!
 
 Hopefully, you enjoy it. 
-If you have questions DM me on GitHub, please!
+If you have questions DM me via e-mail, please!
 
 Cheers!
